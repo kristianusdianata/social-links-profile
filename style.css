@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Inter Regular";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter SemiBold";
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+}
+
+:root {
+  --background: hsl(0, 0%, 8%);
+  --card: hsl(0, 0%, 12%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --card-primary: hsl(0, 0%, 20%);
+  --card-primary-foreground: hsl(0, 0%, 100%);
+  --card-text-primary: hsl(75, 94%, 57%);
+  --card-accent: hsl(75, 94%, 57%);
+  --card-accent-foreground: hsl(0, 0%, 20%);
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+p,
+h1,
+h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.font-regular {
+  font-family: "Inter Regular";
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-family: "Inter SemiBold";
+  font-weight: 600;
+}
+
+.font-bold {
+  font-family: "Inter Bold";
+  font-weight: 700;
+}
+
+.button {
+  background-color: var(--card-primary);
+  color: var(--card-primary-foreground);
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--card-accent);
+  color: var(--card-accent-foreground);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: var(--card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  margin: 12px;
+}
+
+img.profile-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.name-label {
+  color: var(--card-foreground);
+  margin-bottom: 12px;
+}
+
+.address-label {
+  color: var(--card-text-primary);
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.about-label {
+  color: var(--card-foreground);
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  row-gap: 12px;
+}
