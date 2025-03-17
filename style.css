@@ -58,6 +58,7 @@ h2 {
 }
 
 .button {
+  display: block;
   background-color: var(--card-primary);
   color: var(--card-primary-foreground);
   padding: 10px;
